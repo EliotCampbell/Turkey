@@ -1,0 +1,75 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+     <title>{% block title %}{% endblock %}</title>
+    <meta name="description" content="Грузоперевозки по Великому Новгороду и области, междугородние переезды Санкт-Петербург - Великий новгород">
+    <meta name="Keywords" content="Великй Новгород, грузоперевозки, заказать, газель, переезд">
+    <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+    <link rel="icon" href="{% static 'main/favicon.ico' %}" type="image/x-icon" sizes="16x16 32x32">
+    <link rel="stylesheet" href="{% static 'main/css/fonts.css' %}">
+</head>
+
+
+<body>
+    <div class="wrapper">
+
+         <div class="top"> <!-- Верх-->
+            <div class="topcont">
+                <a class="toplogo" href="/"><img src="{% static 'main/assets/images/indyuk.png' %}" class="logophoto"></a>
+                        <div class="toptable">
+                            <a class="toptabletext" href="/">Калькулятор стоимости</a>
+                            <a class="tel" href="/">8 (996) 940-22-43</a>
+                        </div>
+            </div>
+         </div>
+
+
+            <div class="header"> <!-- Меню-->
+                <div class="headercover">
+                    <a class="brand" href="/"><img src="{% static 'main/assets/images/express.png' %}" class="logotext"></a>
+                    <div class="navblock">
+
+                        <div class="smallmenucont">
+                            <input type="checkbox" id="burgercheck">
+                            <label id=burgerchecklabel for="burgercheck"><div class="menuimg" ><a class="menubutton">menu</a></div></label>
+                            <ul class="smallmenuul">
+                                <li class="smallnavli"><a class="smallnavlink" href="https://vk.com/market-195315042">Услуги и цены</a></li>
+                                <li class="smallnavli"><a class="smallnavlink" href="https://vk.com/market-195315042">Машины</a></li>
+                                <li class="smallnavli"><a class="smallnavlink" href="contacts">Контакты</a></li>
+                                <li class="smallnavli"><a class="smallnavlink" href="#">Партнеры</a></li>
+                            </ul>
+                        </div>
+                        <!--Основное меню-->
+                        <ul class="bigmenu">
+                            <li class="navli"><a class="navlink" href="https://vk.com/market-195315042">Машины</a></li>
+                            <li class="navli"><a class="navlink" href="https://vk.com/market-195315042">Услуги и цены</a></li>
+                            <li class="navli"><a class="navlink" href="contacts">Контакты</a></li>
+                            <li class="navli"><a class="navlink" href="#">Партнеры</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+    <!--Основной блок-->
+        <div class="main">
+            {% block main %}{% endblock %}
+        </div>
+
+    <!-- Подвал-->
+        <div class="footerwrap">
+                <div class="footerdiv">
+                    <a class="footertext1">Turkey</a>
+                </div>
+                <div class="footersocial">
+                    <a class="footertext2">мы в социальных сетях:</a>
+                    <img src="{% static 'main/assets/images/vk.png' %}" class="footerimg" href="https://vk.com/turkey_express">
+                    <img src="{% static 'main/assets/images/ins.png' %}" class="footerimg" href="https://www.instagram.com/turkeyexpress/">
+                </div>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+{% extends 'main/base.html' %}
+
+
+{% load static %}
+
+
+{%  block title %}TurkeyExpress{% endblock %}
+
+{% block main %}
+    <div class="mainblock">
+        <div class="leftblock">
+                    <ul class="ulmenu">
+                        <li class="lileft"><a class="ecotaxtext" href="https://vk.com/turkey_express">Экотакси<img src="{% static 'main/assets/images/ecotax.png' %}" href="https://vk.com/turkey_express" class="ecotax"></a></li>
+                        <li class="lileft"><a class="ecotaxtext"  href="https://vk.com/turkey_express">Грузовое такси</a></li>
+                        <li class="lileft"><a class="ecotaxtext" href="https://vk.com/turkey_express">Грузоперевозки по Великому новгороду и новгородской области</a></li>
+                        <li class="lileft"><a class="ecotaxtext" href="https://vk.com/turkey_express">Межрегиональные перевозки</a></li>
+                        <li class="lileft"><a class="ecotaxtext" href="https://vk.com/turkey_express">Экспедирование</a></li>
+                        <li class="lileft"><a class="ecotaxtext" href="https://vk.com/turkey_express">Переезды</a></li>
+                    </ul>
+        </div>
+
+        <div class="rightblock"/>
+            ddd
+        </div>
+    </div>
+
+
+<!-- <div class="background">
+    <div class="container">
+       <img src="{% static 'main/assets/images/backplate.svg' %}" class="backplate">
+        <div class="text_block">
+            <ul class="ulmenu">
+                <li><a class="ecotaxtext" href="https://vk.com/turkey_express">Экотакси<img src="{% static 'main/assets/images/ecotax.png' %}" href="https://vk.com/turkey_express" class="ecotax"></a></li>
+                <li><a class="ecotaxtext"  href="https://vk.com/turkey_express">Грузовое такси</a></li>
+                <li><a class="ecotaxtext" href="https://vk.com/turkey_express">Грузоперевозки по Великому новгороду и новгородской области</a></li>
+                <li><a class="ecotaxtext" href="https://vk.com/turkey_express">Межрегиональные перевозки</a></li>
+                <li><a class="ecotaxtext" href="https://vk.com/turkey_express">Экспедирование</a></li>
+                <li><a class="ecotaxtext" href="https://vk.com/turkey_express">Переезды</a></li>
+            </ul>
+        </div>
+    </div>
+        <div class="formdiv">
+        <a class="form-title">Тут можно оставить свой<br>↓номер для связи↓</a>
+
+        <form id="form-contact" method="POST" class="form-element" autocomplete="off">
+
+            <div class="form-input_nt">
+            <a class="form-message"></a>
+            <input name="name" type="text" class="form-input" tabindex="0" placeholder="Введите ваше имя..." required>
+
+
+            <a class="form-essage"></a>
+            <input name="phone" type="tel" class="form-input" tabindex="0" pattern="^[ 0-9]+$" placeholder="Введите ваш телефон..." required>
+            </div>
+            <input name="theme" type="hidden" class="form-input__theme"  value="Подписчики захотели перевезти">
+
+            <input type="submit" class="form-input__button" value="Отправить">
+        </form>
+
+        </div>
+
+
+
+
+    </div>
+</div> -->
+
+{% endblock %}
