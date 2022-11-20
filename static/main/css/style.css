@@ -68,7 +68,7 @@ body {
     justify-content: space-between;
 }
 
-@media (max-width: 992px) {
+@media  (max-width: 992px) {
     .toptable {
         flex-direction: column;
         justify-content: space-around;
@@ -80,18 +80,8 @@ body {
     }
 
 }
+
 @media (max-width: 768px) {
-    .toptable {
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: end;
-    }
-    .mainblock{
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-    }
-
-
     html {
         height: 100%;
         min-width: 320px;
@@ -185,142 +175,6 @@ body {
             width: 100% !important;
         }
     }
-
- @media screeggn {
-     .smallmenucont{
-        display: flex !important;
-        height: 100%;
-        width: 100%;
-        position: relative;
-        justify-content: center;
-    }
-    .smallnavli{
-        background-color: #392f2f;
-        width: 100% !important;
-    }
-    .menulink{
-        display: flex !important;
-        justify-content: end;
-        width: 100%;
-        height: 100%;
-    }
-     .bigmenu{
-        display: none !important;
-    }
-     .topcont {
-         flex-direction: column;
-         justify-content: center;
-     }
-
-     .toplogo {
-         display: none;
-     }
-
-     .toptable {
-         display: none;
-     }
-
-     .topcont {
-         height: 15px;
-     }
-
-     body {
-         background-image: none;
-     }
-
-     .footertext2 {
-         display: none
-     }
-
-     .mainblock {
-         height: calc(100vh - 180px) !important;
-     }
-
-     .leftblock {
-         min-width: 376px !important;
-     }
-
-     .ecotaxtext {
-         font-size: 18pt;
-     }
-
-     .rightblock {
-         display: none!important;
-     }
-     .leftblock{
-         background-size: 200%!important;
-         width: 100% !important;
-     }
- }
-
-
-@media (orientatin:portrait) {
-     .smallmenucont{
-        display: flex !important;
-        height: 100%;
-        width: 100%;
-        position: relative;
-        justify-content: center;
-    }
-    .smallnavli{
-        background-color: #392f2f;
-        width: 100% !important;
-    }
-    .menulink{
-        display: flex !important;
-        justify-content: end;
-        width: 100%;
-        height: 100%;
-    }
-     .bigmenu{
-        display: none !important;
-    }
-     .topcont {
-         flex-direction: column;
-         justify-content: center;
-     }
-
-     .toplogo {
-         display: none;
-     }
-
-     .toptable {
-         display: none;
-     }
-
-     .topcont {
-         height: 15px;
-     }
-
-     body {
-         background-image: none;
-     }
-
-     .footertext2 {
-         display: none
-     }
-
-     .mainblock {
-         height: calc(100vh - 180px) !important;
-     }
-
-     .leftblock {
-         min-width: 376px !important;
-     }
-
-     .ecotaxtext {
-         font-size: 18pt;
-     }
-
-     .rightblock {
-         display: none!important;
-     }
-     .leftblock{
-         background-size: 200%!important;
-         width: 100% !important;
-     }
- }
-
 
 .smallnavli{
     height: 55px;
@@ -450,20 +304,7 @@ body {
     font-size: 18pt;
 }
 
-.navlink {
-    height: 100%;
-    min-width: fit-content;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    color: #ebebeb;
-    text-decoration: none;
-    white-space: nowrap;
-    padding-left: 7px;
-    padding-right: 7px;
-}
-
-.smallnavlink {
+.smallnavlink, .navlink {
     height: 100%;
     min-width: fit-content;
     align-items: center;
@@ -548,10 +389,6 @@ body {
     margin-inline-end: 0;
     padding-inline-start: 0;
     list-style-image: url(../../../static/main/listimage.png);
-}
-
-.lileft {
-    heiht: 16.5%;
 }
 
 
